@@ -63,9 +63,6 @@ kotlin {
             implementation(libs.ktor.client.content.negotiation) // For serialization support
             implementation(libs.ktor.serialization.kotlinx.json) // For JSON serialization`
 
-            // Coroutines
-            implementation(libs.coroutines.extensions)
-
             // Room
             implementation(libs.room.runtime)
             implementation(libs.sqlite.bundled)
