@@ -17,6 +17,7 @@ class TodoListRepository(
             todoDao.insertAll(fetchedTodos)  // Upsert
         } catch (e: Exception) {
             // Handle the error, maybe log or show an error state
+            println("Error: $e")
         }
     }
 
