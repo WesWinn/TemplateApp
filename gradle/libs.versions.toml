@@ -5,8 +5,8 @@ android-minSdk = "24"
 android-targetSdk = "34"
 androidx-activityCompose = "1.9.3"
 androidx-appcompat = "1.7.0"
-androidx-constraintlayout = "2.1.4"
-androidx-core-ktx = "1.13.1"
+androidx-constraintlayout = "2.2.0"
+androidx-core-ktx = "1.15.0"
 androidx-espresso-core = "3.6.1"
 androidx-lifecycle = "2.8.0"
 androidx-material = "1.12.0"
@@ -20,8 +20,8 @@ koinComposeViewmodel = "1.2.0-Beta4"
 kotlin = "2.0.20"
 kotlinxCoroutinesCore = "1.9.0"
 ksp = "2.0.20-1.0.25"
-room = "2.7.0-alpha10" # 2.7.0-alpha01 is the earliest Room/KMP integration. Replace when stable
-sqlite = "2.5.0-alpha10"
+room = "2.7.0-alpha11" # 2.7.0-alpha01 is the earliest Room/KMP integration. Replace when stable
+sqlite = "2.5.0-alpha11"
 
 
 [libraries]
