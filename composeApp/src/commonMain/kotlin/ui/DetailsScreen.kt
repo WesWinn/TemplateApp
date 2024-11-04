@@ -31,8 +31,12 @@ import viewmodel.DetailsViewModel
 
 @OptIn(KoinExperimentalAPI::class)
 @Composable
-fun DetailsScreen(todoId: Int, onBack: () -> Unit) {
-    val viewModel: DetailsViewModel = koinViewModel(parameters = { parametersOf(todoId) })
+fun DetailsScreen(
+    todoId: Int,
+    onBack: () -> Unit,
+    viewModel: DetailsViewModel = koinViewModel(parameters = { parametersOf(todoId) })
+) {
+
     val todo by viewModel.todo.collectAsState()
 
     ScaffoldWithTopBar(
