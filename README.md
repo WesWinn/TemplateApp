@@ -6,6 +6,7 @@ Architecturally, fairly straightforward:
 * MVVM / Repository Pattern
 * Not using MVI or Use Cases. These aren't universal and different app complexity may not need any.
 * Using KMP standards such as Koin for DI, Ktor for networking, kotlinx.serialization for json
+* Database Layer uses Room for local data storage. While Room originated as an Android library, it now works seamlessly across all KMP targets including iOS through Kotlin's expect/actual mechanism and the bundled SQLite driver - no platform-specific database code needed.
 
 * `/composeApp` is for shared code across platforms (just iOS/Android now, but can support web/desktop).
   It contains a few subfolders:
